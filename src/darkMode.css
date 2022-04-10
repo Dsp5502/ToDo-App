@@ -1,0 +1,199 @@
+:root {
+  /**Dark Theme*/
+  --VeryLightGray: hsl(0, 0%, 98%);
+
+  --VeryDarkBlue: hsl(235, 21%, 11%);
+  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --LightGrayishBlue: hsl(234, 39%, 85%);
+  --LightGrayishBlueHover: hsl(236, 33%, 92%);
+  --DarkGrayishBlue: hsl(234, 11%, 52%);
+  --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+  --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+}
+
+.pruebaDark {
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  color: rgba(189, 187, 187, 0.89);
+}
+
+.fondoDark {
+  width: 100vw;
+  height: 25vh;
+  background-color: var(--VeryDarkBlue);
+  background-image: url('https://res.cloudinary.com/djjgtili7/image/upload/v1649255379/todo%20App/bg-desktop-dark_d7x5lq.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 767px) {
+  .fondoDark {
+    height: 40vh;
+  }
+}
+
+.containerTituloDark {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+
+@media (min-width: 767px) {
+  .containerTituloDark {
+    width: 50vw;
+  }
+}
+
+.inputTodoDark {
+  width: 90vw;
+  margin: 15px auto;
+  height: 45px;
+}
+@media (min-width: 767px) {
+  .inputTodoDark {
+    width: 50vw;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.iTodoDark {
+  border: 1px solid red;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: none;
+  color: rgb(177, 179, 202);
+  background-color: var(--VeryDarkDesaturatedBlue);
+  font-weight: 700;
+  outline: none;
+}
+
+/* Todo list */
+
+.contTodoListDark {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -25px 10px 45px;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 14px 56px -6px rgba(0, 0, 0, 0.66);
+  color: rgba(189, 187, 187, 0.89);
+}
+@media (min-width: 767px) {
+  .contTodoListDark {
+    width: 48vw;
+    margin: -45px auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.todoSelectDark {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(91, 92, 120);
+  font-weight: 700;
+  color: rgb(177, 179, 202);
+}
+.datosTodosDark {
+  /* border: 1px solid red; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin: 15px 0 0;
+  color: rgb(91, 92, 120);
+  cursor: pointer;
+}
+
+.iconoDark {
+  margin: 0 15px;
+  cursor: pointer;
+  color: var(--VeryDarkGrayishBlue);
+}
+.iconoDark:hover {
+  color: #7b7d90;
+}
+
+.clearHoverDark:hover {
+  color: #7b7d90;
+}
+
+/* * Filters */
+
+.contFilterDark {
+  /* border: 1px solid red; */
+  background-color: var(--VeryDarkDesaturatedBlue);
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: rgb(91, 92, 120);
+  box-shadow: 2px 14px 56px -6px rgba(0, 0, 0, 0.66);
+}
+@media (min-width: 767px) {
+  .contFilterDark {
+    width: 48vw;
+  }
+}
+
+.tagshoverDark {
+  cursor: pointer;
+  color: rgb(91, 93, 121);
+}
+
+.tagshoverDark:hover {
+  color: rgb(164, 168, 187);
+  font-weight: bold;
+}
+
+/** Filter all */
+
+.cardFilterDark {
+  /* border: 1px solid red; */
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 6px 29px -3px rgba(0, 0, 0, 0.66);
+}
+
+@media (min-width: 767px) {
+  .cardFilterDark {
+    width: 48vw;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.colored-toastDark {
+  background-color: var(--VeryDarkGrayishBlue) !important;
+}

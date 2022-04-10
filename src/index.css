@@ -1,0 +1,298 @@
+@import 'darkMode.css';
+
+
+:root {
+/** Primario */
+
+--BrightBlue: hsl(220, 98%, 61%);
+--CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+/** Light Theme */
+
+--VeryLightGray: hsl(0, 0%, 98%);
+--VeryLightGrayishBlue: hsl(236, 33%, 92%);
+--LightGrayishBlue: hsl(233, 11%, 84%);
+--DarkGrayishBlue: hsl(236, 9%, 61%)
+--VeryDarkGrayishBlue: hsl(235, 19%, 35%)
+
+/**Dark Theme*/
+
+--VeryDarkBlue: hsl(235, 21%, 11%);
+--VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+--LightGrayishBlue: hsl(234, 39%, 85%);
+--LightGrayishBlueHover: hsl(236, 33%, 92%);
+--DarkGrayishBlue: hsl(234, 11%, 52%);
+--VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+--VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: var(--VeryDarkGrayishBlue);
+  /* border: 1px solid red */
+}
+
+
+
+.fondo{
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 25vh;
+  background-color: white;
+  background-image: url('https://res.cloudinary.com/djjgtili7/image/upload/v1649255379/todo%20App/bg-desktop-light_v53nna.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media(min-width: 767px){ 
+    .fondo{
+      height: 40vh;
+    }
+}
+
+
+
+
+.containerTitulo{
+  /* border: 1px solid red; */
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: white; 
+  cursor: pointer;
+}
+
+
+@media(min-width: 767px){ 
+.containerTitulo{
+  width: 50vw;
+}
+
+}
+
+.inputTodo{
+  /* border: 1px solid red; */
+  width: 90vw;
+  margin: 15px auto;
+  height: 45px;
+  
+  
+}
+@media(min-width: 767px){ 
+.inputTodo{
+  width: 50vw;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+}
+
+.iTodo{
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  padding:0 15px;
+  border: none;
+  
+  
+}
+
+
+
+
+/* Todo list */
+
+.contTodoList{
+  /* border: 1px solid red; */
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -25px 10px 45px ;
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 14px 56px -6px rgba(0,0,0,0.66);
+  
+  
+}
+@media(min-width: 767px){ 
+.contTodoList{
+  width: 48vw;
+  margin: -45px auto 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}}
+
+
+.todoSelect{
+  /* border: 1px solid red; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:16px;
+  margin:  15px 0;
+  padding:  15px 0 ;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  font-weight:400;
+}
+.datosTodos{ 
+  /* border: 1px solid red; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:16px;
+  margin:  15px 0 0;
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+  
+}
+
+.iconos{
+  margin:  0 15px ;
+}
+.icono{
+  margin:  0 15px;
+  cursor: pointer;
+  color:#7B7D90;
+}
+.icono:hover{
+  color:var(--VeryDarkGrayishBlue);
+}
+
+
+.clearHover:hover{
+color:#7A7B84;
+}
+
+/* * Filters */
+
+.contFilter{
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 2px 14px 56px -6px rgba(0,0,0,0.66);
+  
+}
+@media(min-width: 767px){ 
+    .contFilter{
+      width: 48vw;
+    }
+}
+
+.contNav{
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 100%; 
+}
+
+.navlist{
+   /* border: 1px solid blue; */
+  display:flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.tagshover{
+  cursor: pointer;
+  color: #92919B;
+ 
+
+}
+
+.tagshover:hover{
+/* color: rgb(217,220,234) ; */
+color:#525366;
+ font-weight: bold;
+}
+
+/** Filter all */
+
+
+.cardFilter{
+  /* border: 1px solid red; */
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 6px 29px -3px rgba(0,0,0,0.66);
+}
+
+@media(min-width: 767px){ 
+.cardFilter{
+  width: 48vw;
+  margin: 25px auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}}
+
+
+
+
+
+
+.prueba{
+  height: 100vh;
+  background-color: var(--VeryLightGray)
+}
+
+
+.inputTags{
+  display:none
+}
+
+
+
+
+.tagSelect{
+  color: #5F7DBA;
+  font-weight: 700;
+}
+
+
+.swal2-popup{
+  background-color: white !important;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.Toastify__toast-theme--dark{
+  background-color: var(--VeryDarkDesaturatedBlue)!important;
+}
+
+
+
